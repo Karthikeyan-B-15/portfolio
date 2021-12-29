@@ -1,0 +1,109 @@
+*{
+	margin: 0;padding: 0;
+}
+.home{
+	
+	min-height:100vh;
+	background-image: linear-gradient(to bottom right	,#360033,#0b8793);
+}
+header h1{
+	text-align: center;
+	color: #9c27b0;
+	padding-top: 20px;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+}
+nav h1{
+	color: #9c27b0;
+	font-size: 2em;
+	padding-left: 8%;
+}
+.navlink{
+	flex: 1;
+	text-align: right;
+}
+.navlink ul li{
+
+	list-style-type:none;
+	display: inline-block;
+	
+	
+}
+.navlink ul li::after{
+	content: '';
+	background-color: #0b8793;
+	height: 2px;
+	width: 0%;
+	display: block;
+	transition:1s;
+	
+}
+.navlink ul li:hover::after{
+	width: 50%;
+	
+}
+.navlink ul li a{
+	text-decoration: none;
+	margin-right: 50px;
+	color: #0b8793;
+}
+.section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10%;
+	padding-top: 35px;
+}
+.section .row1 h1{
+	font-size: 5em;
+	color: #0b8793;
+}
+.section .row1 h3{
+	line-height: 10vh;
+	font-size: 2em;
+	color: #0b8793;
+}
+.section .row1 h3 span{
+	color:#4462b9;
+}
+.section .row2 img{
+	width: 350px;
+	height: 400px;
+	opacity: 0.6;
+	border-bottom-right-radius:30% ;
+	border-bottom-left-radius: 30%;
+}
+.about{
+	min-height: 100vh;
+	background: #2193b0;  /* fallback for old browsers */
+	background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.about h1{
+	text-align: center;
+	padding: 50px 0;
+
+}
+.about dl{
+	width: 80%;
+	padding: 0 5%;
+
+}
+.about dl dd{
+	margin-left: 5%;
+	padding:15px 0;
+	line-height: 20px;
+}
+.footer{
+	min-height: 50vh;
+	background: #6dd5ed;
+	background: linear-gradient(to bottom, #2C5364, #2193b0);   
+}
+.footer h1{
+	padding: 20px;
+	text-align: center;
+}
