@@ -3,14 +3,16 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="home">
-		<header><h1>Portfolio</h1></header>
 		<nav>
 			<h1>TeslaKarthi</h1>
 			<div class="navlink">
-				<ul>
+				<img id="ham"src="ham.png" alt="menu" onclick="togglemenu();">
+				<ul id="menuList">
+					<img src="close.png" alt="menu" onclick="togglemenu();">
 					<li><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#">Contact Me</a></li>
@@ -44,6 +46,41 @@
 	</div>
 	<div class="footer">
 		<h1>Contact Me</h1>
+		<div class="row">
+			<div class="col1">
+				<form action="#">
+					<input type="text" name="username" placeholder="Enter your name"><br>
+					<input type="email" name="email" placeholder="Enter your E-maill"><br>
+					<textarea name="message"placeholder="Enter your message"></textarea><br>
+					<input type="button" value="Send">
+				</form>
+			</div>
+			<div class="col2">
+				<ul>
+					<li id="facebook"><a href="#"></a></li>
+					<li id="instagram"><a href="#"></a></li>
+					<li id="github"><a href="#"></a></li>
+					<li id="stack"><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
+	<script>
+		var menuList=document.getElementById('menuList');
+		var img=document.getElementById('ham');
+		
+		function togglemenu(){
+			
+			if(menuList.style.maxWidth=="0px"){
+				menuList.style.maxWidth="50vw";
+				img.style.display="none";
+			}
+			else{
+				menuList.style.maxWidth="0px";
+				img.style.display="block";
+
+			}
+		}
+	</script>
 </body>
 </html>
